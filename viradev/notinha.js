@@ -10,11 +10,11 @@ let media = (nota1 + nota2 + nota3) / 3
 
 function resultadoEscolar(media){
     if (media >= 7){
-        return 'Parabéns, você entrou ';
+        return 'Parabéns, você passou!';
     } else if ( media >= 5 && media <= 6){
-        return 'Oh seu merdaa, faz a recuperação ai oh kct';
+        return 'Vais precisar fazer a recuperação!';
     } else {
-        return 'é burro pkrlh e nao sabe nem passaar na escola pqp'
+        return 'Infelizmente você não passou!'
     }
 }
 
