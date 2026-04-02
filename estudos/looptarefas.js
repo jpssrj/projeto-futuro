@@ -41,17 +41,3 @@ console.log(`Itens em progresso: ${emProgresso}`); */
         console.log(`Você deve focar em: ${tarefas[i].atividade}`);
     }
 } */
-
-/* let concluidas = 0;
-let pendentes = 0;
-let emProgresso = 0;
-
-for (let i = 0; i < tarefas.length; i++){
-    if (tarefas[i].status == 'concluído'){
-        concluidas++
-    } else if (tarefas[i].status == 'pendente') {
-        pendentes++
-    } else {
-        emProgresso++
-    }
-}
