@@ -30,15 +30,42 @@ console.log('-------------------------------------------');
 
 function resultadoEscolar(nota){
     if (nota >= 7){
-        return 'Parabéns, você tem cabeça e não é burro';
+        return 'Parabéns, você passou!';
     } else if ( nota >= 5 && nota <= 6){
-        return 'Oh seu merdaa, faz a recuperação ai oh kct';
+        return 'Vais precisar fazer a recuperação!';
     } else {
-        return 'é burro pkrlh e nao sabe nem passaar na escola pqp'
+        return 'Infelizmente você não passou!'
     }
 }
 
 console.log(resultadoEscolar(4))
-// se for igual ou maior que 7 = passou
-// se for entre 5 e 6 = recuperação
-// se for menor ou igual a 4 = não passou  
+console.log(resultadoEscolar(5))
+console.log(resultadoEscolar(8))
+console.log('-------------------------------------------');
+
+function verificadorDeValor(valor){
+    if (valor >= 1000){
+        return 'Está caro demais!';
+    } else if (valor >=500 && valor <= 999){
+        return 'Está na média do mercado';
+    } else {
+        return 'Cuidado, está muito barato, pode ser golpe!'
+    }
+}
+
+console.log(verificadorDeValor(300));
+console.log(verificadorDeValor(600));
+console.log(verificadorDeValor(1150));
+console.log('-------------------------------------------');
+
+function finsDeSemana(){
+let diaDaSemana = 4;
+
+    if (diaDaSemana == 1 || diaDaSemana == 7){
+        return 'Aproveita, o fim de semana chegou!'
+    } else {
+        return 'Infelizmente o fim de semana ainda não chegou!'
+    }
+}
+
+console.log(finsDeSemana())
