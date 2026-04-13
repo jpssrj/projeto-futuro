@@ -28,6 +28,7 @@ const usuarioEncontrado = usuarios.find( u => u.id == inserirId);
                     const valorOperacao = scanner.questionFloat(`Insira o valor: `);
                     console.log(`Enviado! Seu saldo agora é de R$${usuarioEncontrado.saldo - Number(valorOperacao).toFixed(2)}.`);
                     break;
+                case 3:
 
             }
     } else {
