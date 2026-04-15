@@ -17,3 +17,8 @@ num1 = Number(num1.toFixed(2));
 
 console.log(num1 + num2);
 console.log(Number.isInteger(num1))
+
+// Podemos trabalhar com os numeros como se fossem strings também, basta convertelos com .toString()
+
+num1 = num1.toString();
+console.log(typeof num1)
