@@ -1,3 +1,5 @@
+let listaDeNumeroSecreto = [];
+let limiteDeNumeros = 3
 let numeroSecreto = gerarNumeroAleatorio();
 
 function textoNaTela(tag, texto) {
@@ -37,9 +39,19 @@ function verificarChute() {
 }
 
 function gerarNumeroAleatorio () {
-    let secreto = parseInt(Math.random() * 10 + 1);
+    let secreto = parseInt(Math.random() * limiteDeNumeros + 1);
+    let quantidadeDeElementosNaLista = listaDeNumeroSecreto.length;
+    if (quantidadeDeElementosNaLista == limiteDeNumeros) {
+        listaDeNumeroSecreto = [];
+    }
     console.log(`O número secreto é: ` + secreto);
-    return secreto
+    if (listaDeNumeroSecreto.includes(secreto)) {
+        return gerarNumeroAleatorio();
+    } else {
+        listaDeNumeroSecreto.push(secreto);
+        console.log(listaDeNumeroSecreto);
+        return secreto;
+    }
 }
 
 function limparTela() {
