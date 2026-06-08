@@ -54,5 +54,5 @@ function tabuada(numero) {
     }
 }
 
-tabuada(9)
+tabuada(3)
 
