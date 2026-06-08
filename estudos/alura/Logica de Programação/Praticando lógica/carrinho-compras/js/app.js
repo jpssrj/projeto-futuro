@@ -44,4 +44,22 @@ function adicionar() {
     console.log(`Seu carrinho atual é:`, carrinho);
 
     listaProdutos.innerHTML = '';
+    pushProdutoCart(quantidade, nomeProduto, totalAtual);
+}
+
+function pushProdutoCart(quantidade, nome, subTotal) {
+    listaProdutos.innerHTML = `<span class="texto-azul">${quantidade}x</span>${nome}<span class="texto-azul">R$${subTotal}</span>`
+}
+
+// Puxando o botão de limpeza
+const btnLimpar = document.getElementById('botao-limpar');
+
+btnLimpar.addEventListener('click', () => {
+    console.log('O botão de limpeza foi acionado.');
+    carrinho = [];
+    console.log(carrinho);
+})
+
+function limpar() {
+    carrinho.splice(0, carrinho.length);
 }
