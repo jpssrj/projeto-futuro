@@ -1,0 +1,47 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    border: none;
+}
+
+body {
+    background-image: url(assets/DEPOIS\ \(1\).png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+.notificacao {
+    background-color: #ffffff7a;
+    width: 22vw;
+    padding: 15px;
+    font-family: sans-serif;
+    position: absolute;
+    right: 15px;
+    top: 20%;
+    transform: translateY(-50%);
+    border: 3px solid white;
+    
+    /* Cria o corte no canto superior direito */
+    clip-path: polygon(0 0, 88% 0, 100% 25%, 100% 100%, 0 100%);
+}
+
+.tag {
+    background: #eee;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+h2 {
+    margin: 15px 0;
+    font-size: 1.2rem;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.9rem;
+    color: #333;
+}

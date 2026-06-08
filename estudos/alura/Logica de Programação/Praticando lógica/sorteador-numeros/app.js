@@ -5,6 +5,12 @@ function sortear() {
     let deX = Number(document.getElementById('de').value);
     let ateY = Number(document.getElementById('ate').value);
 
+    // Proteção de entrada de dados
+    if (quantidadeNumeros <= 0 || ateY <= deX) {
+        alert('Por favor, insira apenas números maiores que zero e certifique-se de que "ate" seja maior que "de".');
+        return;
+    }
+
     let resultado = [];
 
     while (quantidadeNumeros > 0) {
