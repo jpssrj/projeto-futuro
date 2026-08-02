@@ -59,7 +59,3 @@ btnLimpar.addEventListener('click', () => {
     carrinho = [];
     console.log(carrinho);
 })
-
-function limpar() {
-    carrinho.splice(0, carrinho.length);
-}
