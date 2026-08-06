@@ -50,8 +50,8 @@ Depois, você deve calcular a idade atual dessa pessoa (usando matemática simpl
 - Um ano atual ou de nascimento não muda ao longo da execução desse programa em si, então que tipo de declaração (let/const) faz sentido?
 
 ## ✅ Checklist
-- [ ] Entendi `console.log` e comentários
-- [ ] Diferenciei `let` e `const`
+- [X] Entendi `console.log` e comentários
+- [X] Diferenciei `let` e `const`
 - [ ] Usei tipos primitivos (Strings, Numbers, Booleans)
 - [ ] Calculei e comparei valores
 - [ ] Imprimi o resultado com Template Literals
@@ -61,5 +61,8 @@ Depois, você deve calcular a idade atual dessa pessoa (usando matemática simpl
 
 ## 🏁 Antes de avançar
 1. Qual é a principal diferença entre `let` e `const`?
+R: `let` usamos para quando em algum momento precisaremos alterar o valor daquela variável, já a `const` significa que aquele valor se permanecerá constante durante toda a operação do programa.
 2. O que acontece se eu tentar somar uma variável Number com uma variável String?
+R: Irá somar normalmente, por exemplo `console.log(5 + "nome"); resulta em => 5nome`.
 3. Como eu coloco uma variável dentro de um Template Literal?
+R: `console.log(`teste de adicionar uma ${variavel} em template strings`)`;
