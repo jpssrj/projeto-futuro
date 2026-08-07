@@ -48,14 +48,14 @@ Dentro dessa função, use a lógica condicional para tomar decisões:
 - Chame a função várias vezes passando valores diferentes para ver os resultados.
 
 ## ✅ Checklist
-- [ ] Utilizei `if`, `else if` e `else`
-- [ ] Compreendi e apliquei operadores lógicos e de comparação
-- [ ] Entendi a ideia de Truthy e Falsy
-- [ ] Criei uma função que recebe parâmetros
-- [ ] Minha função tem um `return` e não apenas `console.log` interno
-- [ ] Desafio concluído
-- [ ] Consegui explicar minha solução
-- [ ] Fiz commit no Git
+- [O] Utilizei `if`, `else if` e `else`
+- [X] Compreendi e apliquei operadores lógicos e de comparação
+- [X] Entendi a ideia de Truthy e Falsy
+- [X] Criei uma função que recebe parâmetros
+- [X] Minha função tem um `return` e não apenas `console.log` interno
+- [X] Desafio concluído
+- [X] Consegui explicar minha solução
+- [X] Fiz commit no Git
 
 ## 🏁 Antes de avançar
 1. Qual a diferença entre os operadores `==` e `===`?
