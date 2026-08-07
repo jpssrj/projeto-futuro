@@ -59,5 +59,8 @@ Dentro dessa função, use a lógica condicional para tomar decisões:
 
 ## 🏁 Antes de avançar
 1. Qual a diferença entre os operadores `==` e `===`?
+R: == existe para comparações de mesmo valores, não necessitando que sejam estreitamente iguais, pode ser 5 e '5'. Já o === obriga aos valores serem exatamente o mesmo, mesmo tipo, mesmo algorítmo...
 2. Para que serve a palavra `return` dentro de uma função?
+R: Significa que a função quando chamada irá retornar algo, seja uma mensagem, um valor, ou uma variável, por exemplo.
 3. O que acontece se eu não colocar parâmetros em uma função, mas ela precisar de informações de fora?
+R: A função poderá continuar a funcionar, pois ela consegue ver o que está no escopo global, mas será mais dificil de dar manutenção e/ou correção caso a solução quebre.

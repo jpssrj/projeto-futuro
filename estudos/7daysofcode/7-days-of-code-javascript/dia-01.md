@@ -52,12 +52,12 @@ Depois, você deve calcular a idade atual dessa pessoa (usando matemática simpl
 ## ✅ Checklist
 - [X] Entendi `console.log` e comentários
 - [X] Diferenciei `let` e `const`
-- [ ] Usei tipos primitivos (Strings, Numbers, Booleans)
-- [ ] Calculei e comparei valores
-- [ ] Imprimi o resultado com Template Literals
-- [ ] Desafio concluído
-- [ ] Consegui explicar minha solução
-- [ ] Fiz commit no Git
+- [X] Usei tipos primitivos (Strings, Numbers, Booleans)
+- [X] Calculei e comparei valores
+- [X] Imprimi o resultado com Template Literals
+- [X] Desafio concluído
+- [X] Consegui explicar minha solução
+- [X] Fiz commit no Git
 
 ## 🏁 Antes de avançar
 1. Qual é a principal diferença entre `let` e `const`?
