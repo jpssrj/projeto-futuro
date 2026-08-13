@@ -51,16 +51,19 @@ O estudante deverá:
 - Funções de array (`map`, `filter`, `find`) precisam receber uma outra função (callback) como parâmetro, que diz o que fazer com cada item.
 
 ## ✅ Checklist
-- [ ] Criei Arrays e acessei itens pelo índice
-- [ ] Criei Objetos e acessei suas propriedades
-- [ ] Usei `push` para modificar um array
-- [ ] Entendi como funcionam loops
-- [ ] Apliquei `map`, `filter` e `find`
-- [ ] Desafio concluído
-- [ ] Consegui explicar minha solução
-- [ ] Fiz commit no Git
+- [X] Criei Arrays e acessei itens pelo índice
+- [X] Criei Objetos e acessei suas propriedades
+- [X] Usei `push` para modificar um array
+- [X] Entendi como funcionam loops
+- [X] Apliquei `map`, `filter` e `find`
+- [X] Desafio concluído
+- [X] Consegui explicar minha solução
+- [X] Fiz commit no Git
 
 ## 🏁 Antes de avançar
 1. Qual a principal diferença entre um Array e um Objeto?
+Ambos são considerados como objetos, entretanto, um mantém uma lista com index bem definido e não aceita variáveis e palavras reservadas dentro, outro é mais livre e serve como uma caixa para armazenar bastantes informações e deixar tudo organizado
 2. Quando você usaria o `map` em vez do `filter`?
+.map serve para mapear algo e devolver em uma lista, já o .filter é mais para filtrar alguma informação em específico, por exemplo, todos aqueles que tiverem valor menor que X
 3. Como eu acesso a propriedade `nome` do segundo objeto dentro de um array chamado `lista`?
+lista[1].nome

@@ -61,8 +61,8 @@ Para extrair o máximo desse projeto, comprometa-se com estas regras:
 
 ## 📊 Progresso
 
-- [ ] Dia 1 concluído
-- [ ] Dia 2 concluído
+- [X] Dia 1 concluído
+- [X] Dia 2 concluído
 - [ ] Dia 3 concluído
 - [ ] Dia 4 concluído
 - [ ] Dia 5 concluído
