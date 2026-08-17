@@ -5,6 +5,6 @@ def salarioLiquido(salarioBruto):
     convenioMedico = 22.45
     descontosTotais = (salarioBruto * descontoINSS) + convenioMedico
     resultadoLiquido = salarioBruto - descontosTotais
-    return (f"O salário líquido, já com os descontos fica em {resultadoLiquido:.2f} reais.")
+    return resultadoLiquido
 
 print(salarioLiquido(1000))
