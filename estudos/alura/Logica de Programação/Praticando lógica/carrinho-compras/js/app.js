@@ -2,7 +2,8 @@ const selectProduto = document.getElementById('produto');
 let listaProdutos = document.getElementById('lista-produtos');
 
 // Seu carrinho
-let carrinho = []; 
+let carrinho = [];
+let valorTotalCarrinho = 0;
 
 function verificarProduto() {
     const produtoSelecionado = selectProduto.value;
@@ -28,7 +29,8 @@ function adicionar() {
     const totalAtual = valorAtual * quantidade;
     
     // Puxando o nome do produto selecionado para exibir no carrinho
-    let nomeProduto = selectProduto.options[selectProduto.selectedIndex].text
+    let nomeTotal = selectProduto.options[selectProduto.selectedIndex].text
+    let nomeProduto = nomeTotal.split(' - ')[0];
     console.log(`O valor a ser adicionado é ${valorAtual} reais e a quantidade é de ${quantidade}. Totalizando a adição de ${totalAtual} ao carrinho.`)
     console.log(nomeProduto)
     
@@ -43,12 +45,23 @@ function adicionar() {
     carrinho.push(produtoCarrinho);
     console.log(`Seu carrinho atual é:`, carrinho);
 
+    // Atualizar o valor total do carrinho, mandando o valor novo
+    valorTotalCarrinho += subTotal;
+    
+
     listaProdutos.innerHTML = '';
-    pushProdutoCart(quantidade, nomeProduto, totalAtual);
+    pushProdutoCart(carrinho);
 }
 
-function pushProdutoCart(quantidade, nome, subTotal) {
-    listaProdutos.innerHTML = `<span class="texto-azul">${quantidade}x</span>${nome}<span class="texto-azul">R$${subTotal}</span>`
+function pushProdutoCart(carrinho) {
+    // listaProdutos.innerHTML += `<span class="texto-azul">${quantidade}x</span>${nome}<span class="texto-azul">R$${subTotal}</span>`;
+    listaProdutos.innerHTML = '';
+    carrinho.forEach(produto => {
+        listaProdutos.innerHTML +=
+        `<section class="carrinho__produtos__produto">
+            <span class="texto-azul">${produto.quantidade}x</span> ${produto.nome} <span class="texto-azul">R$${produto.subTotal}</span>
+        </section>`;
+    });
 }
 
 // Puxando o botão de limpeza
@@ -58,4 +71,9 @@ btnLimpar.addEventListener('click', () => {
     console.log('O botão de limpeza foi acionado.');
     carrinho = [];
     console.log(carrinho);
+<<<<<<< Updated upstream
 })
+=======
+    pushProdutoCart(carrinho);
+})
+>>>>>>> Stashed changes
