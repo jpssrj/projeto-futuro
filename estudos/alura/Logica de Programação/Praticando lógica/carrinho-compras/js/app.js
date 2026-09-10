@@ -71,9 +71,5 @@ btnLimpar.addEventListener('click', () => {
     console.log('O botão de limpeza foi acionado.');
     carrinho = [];
     console.log(carrinho);
-<<<<<<< Updated upstream
-})
-=======
     pushProdutoCart(carrinho);
 })
->>>>>>> Stashed changes
