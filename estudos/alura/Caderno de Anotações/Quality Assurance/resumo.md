@@ -1,0 +1,32 @@
+# Quality Assurance: Plano de testes e Gestão de bugs
+Para a vida de um Q.A, precisamos sempre ficar atentos a algumas informações importantes, onde podemos optar por duas principais formas de tratar os métodos de construção de alguma aplicação. Geralmente, utilizamos também, planos de teste, para poder-mos entregar uma boa documentação para os desenvolvedores explicando cada teste e sempre que possível devolver quando há algum bug ou falha e/ou implementação que deve ser feita pensando no usuário final.
+
+## Test Plan - Planos de Teste
+Os planos de teste são importantíssimos para o bom funcionamento e criação de features, pois através deles, entregamos aos desenvolvedores uma documentação bem clara do que foi feito quando estávamos testando determinada feature, para que futuramente não corramos o risco de nos esquecer e não conseguir passar as informações precisas do que foi testado no dia.
+Além disso, o test plan pode conter algumas outras coisas que também valem a pena dizer, feedbacks sobre a aplicação, ideias para que o usuário final possa ter melhor experiência com o sistema, futuros bugs que podem acontecer pela utilização da metodologia atual, entre muitas outras coisas cabem no papel tanto do desenvolvedor, quanto do Q.A.
+
+## Métodos - Ágil vs Cascata
+**- Método Ágil:** O método ágil se baseia em entregar funcionalidades da forma mais rápida possível, geralmente utilizado quando não se possui um tempo definido para entrega e/ou deseja entregar o projeto com mais rapidez. Ele não necessita de uma documentação extensa para cada teste, onde o desenvolvedor pode escrever algo enchuto para que juntos possam entregar o projeto pronto e testado com mais velocidade. Design, Construir, Testar são os pilares, onde pode ser dividido em pequenos processos, um teste de login, depois um teste de acesso, tudo juntamente com os desenvolvedores.
+
+**- Método Cascata:** O método cascata é um método maior, uma esteira de desenvolvimento. Um passo após o outro, para que dessa forma seja entregue um projeto completo de uma vez, uma documentação bem extensa e complexa, buscando identificar cada mínimo ponto do sistema. Datas são bem exatas, se planejou 1 ano, será entregue em 1 ano.
+
+## Critério de Aceite
+São os algumas funcionalidades para se indicar que tal ferramenta pode ser aceita e aprovada, por exemplo, dizer que deve ter padrões de acessibilidade, responsividade do front e assim por diante. Tudo isso impacta na entrega final, onde muitas vezes são os principais pontos que o cliente e o engenheiro de cybersegurança precisam para a melhor funcionalidade. O que precisamos entender também é que existem bons e ruins critérios para se indicar, pois não adianta usar-mos critérios subjetivos, "Deixe mais bonito" é algo muito subjetivo, não necessáriamente indica algo que deve ser feito, o conceito de bonito ou não depende dos olhos de quem está vendo. Agora caso venhamos a dizer "Ao tentar fazer login, depois de 5 tentativas em menos de 3 minutos o sistema deve bloquear temporariamente", isso sim se trata de um bom critério, pois preza que o sistema seja protegido a, por exemplo, brute force.
+
+## Definition of Done - DOD
+Definimos quando pronto quando esse protocolo se tratar como True, garantindo que todo o time saiba quando o sistema está pronto ou não, atualizando e revisando para todos.
+Define quando uma atividade está concluída ou não, e deve valer para todas as funcionalidades ("Tal feature está pronta?") podendo ser revisado e atualizado com o tempo, devendo ser feito para o sistema como um todo.
+
+## Testes relacionados a mudanças - Seus principais tipos
+Quando tratamos de mudanças e atualizações no serviço, é importante que testemos as funcionalidades novas para ver se tudo o que já implementamos continua funcionando, isso é válido principalmente para features que são interligadas com o que foi implementado, dessa forma, caso haja algum tipo de erro diremos que o sistema *regrediu*, isso é, fizemos um teste de **regressão**.
+Existe também o teste **fumaça** é quando testamos as principais funcionalidades, as vezes usamos por não termos tempo suficiente para fazer todos os testes necessários para o *teste de regressão*, e dessa forma, validamos as partes mais importantes, talvez uma feature muito utilizada e/ou uma parte do sistema que não pode cair.
+Por fim mas não menos importante, o teste de **sanidade** é outro dos principais aqui mostrados, ele busca assim como o teste de *fumaça* testar as principais partes do sistema, entretanto, levamos ao pé da letra literalmente, testamos o login, testamos o cadastro, a principal funcionalidade do site mesmo que a adição recente não tenha envolvido ela e assim por diante.
+
+Cabe ao Q.A entender, decidir e se necessário assumir o risco para escolher qual metodologia deseja utilizar, muitas vezes não é por não conseguir ou saber testar tudo mas sim pelo tempo que tem disponível para realizar tais atos, portanto, utiliza-se outros testes como *fumaça* e *sanidade*.
+
+Existem também outros tipos te teste, como *limite*, *estado* e *exploratórios*, vejamos um pouco sobre eles.
+Falando sobre testes de **limite**, testaremos em funcionalidades que possúem um limite minimamente expecífico, por exemplo quantos caracteres podem ter uma senha, um comentário, um nome, e como o sistema trata diferentes limites em seu funcionamento. Ele quebra? Ele notifica?
+
+Sobre testes de **estado** é quando após uma determinada ação do usuário, o *estado* de determinado elemento ou funcionalidade deve mudar, um botão de curtida após a ação deve mudar a cor, isso se vale como uma mudança de estaddo e necessita por exemplo de um teste de *estado*. Podem ser feitos com um diagrama de *estado* também, onde criamos um conjunto com todos os tipos de estados diferentes que podemos utilizar no sistema.
+
+Testes **exploratórios** são voltados a exploração em grande escala no sistema, geralmente utilizamos quando estamos connhecendo o projeto e/ou ingressando em alguma nova função. Esse tipo de teste baseia-se em ir *explorando* cada parte do sistema para que possa ser encontrada falhas, entretanto, caso haja algo identificado deveremos fazer novamente alguns testes, agora mais focados em descobrir o motivo do erro ou onde exatamente está o problema encontrado.
